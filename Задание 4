@@ -1,0 +1,11 @@
+function palindrome(message) {
+    let mess = String(message).toLowerCase();
+    if (mess == mess.split("").reverse().join("")) {
+        return true;
+    }
+    return false;
+}
+
+console.log(palindrome('lola') === true);
+console.log(palindrome(',lol,') === true);
+console.log(palindrome("Don't nod") === false);
