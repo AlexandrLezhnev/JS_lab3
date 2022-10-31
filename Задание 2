@@ -1,0 +1,10 @@
+function checkSpam(message) {
+    let mess = String(message).toLowerCase();
+    if (mess.includes("one") || mess.includes("two")) {
+        return true;
+    }
+    return false;
+}
+
+console.log(checkSpam("oNe") == true);
+console.log(checkSpam("tWo") == true);
